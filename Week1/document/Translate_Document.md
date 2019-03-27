@@ -170,6 +170,3 @@ Measure() 호출
    - ATMOST : 부모가 자식에게 가질 수 있는 최대 사이즈를 알려준다.
 
 출처 : https://developer.android.com/guide/topics/ui/how-android-draws.html
-
-
-이제 정리하자

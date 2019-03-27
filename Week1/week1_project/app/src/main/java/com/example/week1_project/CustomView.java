@@ -9,7 +9,7 @@ import android.view.View;
 
 public class CustomView extends View {
 
-    private Paint paint;
+    private Paint paint; // 색상 클래스
 
 
     public CustomView(Context context) {
