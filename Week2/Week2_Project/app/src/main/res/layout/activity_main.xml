@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/assignment_subject"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btn_start_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/communicate_app_webpage_sample" />
+
+    <Button
+        android:id="@+id/btn_start_nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/communicate_app_webpage_sample" />
+
+    <Button
+        android:id="@+id/btn_start_communicate_app_with_webpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/communicate_app_webpage_sample" />
+
+    <Button
+        android:id="@+id/btn_start_my_custom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_custom_dialog" />
+
+
+</LinearLayout>

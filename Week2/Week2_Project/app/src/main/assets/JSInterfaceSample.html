@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Interface Sample</title>
+</head>
+<body>
+<input id="search_input" type="text">
+<input type="button" value="Search" onclick="doAndroidSearch()"/>
+</body>
+<script type="text/javascript">
+    function doAndroidSearch() {
+        var query = document.getElementById("search_input").value;
+        Android.doSearch(query);
+    }
+</script>
+</html>

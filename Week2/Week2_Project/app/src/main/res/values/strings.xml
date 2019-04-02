@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Week2_Project</string>
+
+    <string name="assignment_subject">2주차 과제</string>
+    <string name="communicate_app_webpage_sample">앱과 웹페이지 통신 Sample</string>
+    <string name="my_custom_dialog">커스텀 다이얼로그</string>
+</resources>
