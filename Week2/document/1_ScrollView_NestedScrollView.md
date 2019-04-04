@@ -44,14 +44,25 @@ java.lang.Object
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;android.support.v4.widget.NestedScrollView
 
 ### interface 
-1) NestedScrollingParent
+1) NestedScrollingParent2
 2) NestedScrollingChild2
-3) ScrollView
+3) ScrollingView
 
 - 새 버전과 구 버전 모두에서 `중첩된 스크롤 부모와 스크롤 자식`을 지원
 - 중첩되는 스크롤링이 사용 가능
 - NestedScrollView는 좋은 유저인터페이스를 유연하게 제공
 - 머터리얼 디자인 스크롤링 패턴을 지원
+
+### 정리
+- 스크롤 가능한 부모뷰가 스크롤 가능한 자식뷰를 포함할 수 있게 해주는 것
+- 스크롤 이벤트를 소비 처리로 인해 자연스러운 UI 효과를 낼 수 있음
+- 스크롤 동작 동안 부모와 자식간의 서로 소통하는 방법을 제공하기 때문에 어떤 뷰가 이벤트를 처리할지 결정
+https://www.androiddesignpatterns.com/assets/videos/posts/2018/01/24/cheesesquare-opt.mp4
+
+[출처]]
+https://www.androiddesignpatterns.com/2018/01/experimenting-with-nested-scrolling.html
+
+
 
 
 <br>
