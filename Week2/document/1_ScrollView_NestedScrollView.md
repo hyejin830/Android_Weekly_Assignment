@@ -4,9 +4,13 @@
 
 ### extends FrameLayout
 java.lang.Object
+
 &nbsp;&nbsp;&nbsp;&nbsp;android.view.View
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;android.view.ViewGroup
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;android.widget.FrameLayout
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;android.widget.ScrollView
 
 Scrollview may have `only one direct child` placed within it.
@@ -30,9 +34,13 @@ A scroll view can have only one child  ScrollViews can only have one child widge
 
 ### extends FrameLayout
 java.lang.Object
+
 &nbsp;&nbsp;&nbsp;&nbsp;android.view.View
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;android.view.ViewGroup
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;android.widget.FrameLayout
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;android.support.v4.widget.NestedScrollView
 
 ### interface 
