@@ -2,6 +2,19 @@
     <string name="app_name">Week2_Project</string>
 
     <string name="assignment_subject">2주차 과제</string>
+
     <string name="communicate_app_webpage_sample">앱과 웹페이지 통신 Sample</string>
-    <string name="my_custom_dialog">커스텀 다이얼로그</string>
+
+    <string name="my_custom_dialog">비밀번호 변경 커스텀 다이얼로그</string>
+    <string name="custom_dialog_pw_change_subject_text">\t\t비밀번호를\n변경해주세요</string>
+    <string name="custom_dialog_pw_change_content_text">\t\t\t고객님의 소중한 정보 보호를 위해\n \t\t\t\t\t\t\t\t쪼~끔 불편하시더라도\n3개월 주기로 비밀번호를 변경해주세요.</string>
+    <string name="custom_dialog_pw_change_button">비밀번호 변경하기</string>
+    <string name="custom_dialog_pw_change_dont_watch_check_box">30일간 보지 않기</string>
+    <string name="custom_dialog_pw_change_close_button">닫기</string>
+
+    <string name="android_to_javascript">Android code to JavaScript code</string>
+    <string name="do_send_text_android_to_javascript">Send</string>
+
+    <string name="preference_watch_key">dontwatch</string>
+
 </resources>

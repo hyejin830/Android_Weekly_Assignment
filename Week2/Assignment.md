@@ -47,7 +47,7 @@
 - `비밀번호 변경해주세요` Button : 새로운 화면으로 이동
 - `닫기` Button : Dialog를 닫기
 - `30일간 다시 보지 않기` Check Box : 앱을 재시작 시, 일정 시간 동안 Dialog를 보여주지 않기
-- `동그란` Button 
+- `동그란` Button (가능하면)
 
  <img src="https://github.com/hyejin830/Android_Weekly_Assignment/blob/master/Week2/images/dialog.png" width="20%"></img>
 

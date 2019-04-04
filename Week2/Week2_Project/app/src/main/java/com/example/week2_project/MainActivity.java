@@ -10,13 +10,14 @@ import android.widget.Button;
 import com.example.week2_project.assignment01_scrollview_nestedscrollview.NestedScrollViewActivity;
 import com.example.week2_project.assignment01_scrollview_nestedscrollview.ScrollViewActivity;
 import com.example.week2_project.assignment02_communicate_app_webview.CommunicateAppWithWebpage;
+import com.example.week2_project.assignment03_custom_dialog.CustomDialogPasswordChangeTestActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button startScrollViewActivityButton;
     private Button startNestedScrollViewActivityButton;
     private Button startCommunicateAppWithWebViewButton;
-    private Button startMyCustomDialogButton;
+    private Button startCustomDialogPasswordChangeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +32,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startScrollViewActivityButton = findViewById(R.id.btn_start_scroll_view);
         startNestedScrollViewActivityButton = findViewById(R.id.btn_start_nested_scroll_view);
         startCommunicateAppWithWebViewButton = findViewById(R.id.btn_start_communicate_app_with_webpage);
-        startMyCustomDialogButton = findViewById(R.id.btn_start_my_custom_dialog);
+        startCustomDialogPasswordChangeButton = findViewById(R.id.btn_start_custom_dialog_password_change);
 
         startScrollViewActivityButton.setOnClickListener(this);
         startNestedScrollViewActivityButton.setOnClickListener(this);
         startCommunicateAppWithWebViewButton.setOnClickListener(this);
-        startMyCustomDialogButton.setOnClickListener(this);
+        startCustomDialogPasswordChangeButton.setOnClickListener(this);
     }
 
     @Override
@@ -54,7 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent StartCommunicateAppWithWebpageIntent = new Intent(MainActivity.this, CommunicateAppWithWebpage.class);
                 startActivity(StartCommunicateAppWithWebpageIntent);
                 break;
-            case R.id.btn_start_my_custom_dialog:
+            case R.id.btn_start_custom_dialog_password_change:
+                Intent StartCustomDialogPasswordChangeIntent = new Intent(MainActivity.this, CustomDialogPasswordChangeTestActivity.class);
+                startActivity(StartCustomDialogPasswordChangeIntent);
                 break;
 
 

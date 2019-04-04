@@ -5,13 +5,26 @@
     <title>Js Interface Sample</title>
 </head>
 <body>
+JavaScript code to Android code <br>
 <input id="search_input" type="text">
 <input type="button" value="Search" onclick="doAndroidSearch()"/>
+<br>
+<br>
+<br>
+Android code to JavaScript code
+<br>
+<input id="send_msg" type="text">
 </body>
 <script type="text/javascript">
     function doAndroidSearch() {
         var query = document.getElementById("search_input").value;
         Android.doSearch(query);
+
     }
+
+    function doAndroidReceive(msg){
+        document.getElementById("send_msg").value=msg;
+    }
+
 </script>
 </html>

@@ -33,7 +33,7 @@
         android:text="@string/communicate_app_webpage_sample" />
 
     <Button
-        android:id="@+id/btn_start_my_custom_dialog"
+        android:id="@+id/btn_start_custom_dialog_password_change"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/my_custom_dialog" />
