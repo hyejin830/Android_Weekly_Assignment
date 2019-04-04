@@ -1,7 +1,7 @@
 
 # Create `interfaces` between your app code and your JavaScript code
 
-### 1. Enabling JavaScript : 자바스크립트 `이용 가능하게` 설정하기
+## 1. Enabling JavaScript : 자바스크립트 `이용 가능하게` 설정하기
 - JavaScript is disabled in a WebView by default.
    자바스크립트는 기본적으로 웹뷰에서 이용 불가능
 - Javscript는 WebView에 붙혀진 `WebSettings`를 통해 이용가능
@@ -20,7 +20,7 @@ then you can define a custom user agent string with setUserAgentString(), then q
     webSettings.setJavaScriptEnabled(true);
 ```
 
-### 2. html 처리
+## 2. html 처리
 
 > asset 파일 추가
 
@@ -67,7 +67,7 @@ Instead of using JavaScript's alert() function.
 To bind a new interface between your JavaScript and Android code,
 call addJavascriptInterface(), passing it a class instance to bind to your JavaScript and an interface name that your JavaScript can call to access the class.
 
-### 4.WebAppInterface
+## 4.WebAppInterface
 
 - 생성자(Context)
 - web page 액션 함수
