@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Week3_project</string>
+    <string name="and_frg_life_cycle">액티비티와 프래그먼트의 생명주기</string>
+    <string name="fragment_nav">프래그먼트 네비게이션</string>
+    <string name="btn_communicate_activity_with_frag">액티비티와 프래그먼트의 통신</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
