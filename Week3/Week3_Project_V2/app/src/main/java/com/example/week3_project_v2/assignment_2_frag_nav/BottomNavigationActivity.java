@@ -20,6 +20,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import kotlin.jvm.Throws;
 
 public class BottomNavigationActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, FragNavController.RootFragmentListener, HomeFragment.OnFragmentPushListener {
 
@@ -136,7 +137,8 @@ public class BottomNavigationActivity extends AppCompatActivity implements Botto
                 return MyPageFragment.newInstance(0);
 
         }
-        return null;
+        throw new IllegalStateException("Need to send an index that we know");
+
     }
 
 
