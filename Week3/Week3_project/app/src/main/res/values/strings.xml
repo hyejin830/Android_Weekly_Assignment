@@ -7,4 +7,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="activity_life_cycle_dialog">다이얼로그</string>
+    <string name="start_new_activity">새로운 액티비티로 이동</string>
 </resources>

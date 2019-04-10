@@ -4,6 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".assignment_1_activity_fragment_life_cycle.LifeCycleActivity">
+    tools:context=".assignment_1_activity_life_cycle.LifeCycleActivity">
+
+    <Button
+        android:id="@+id/do_start_dialog_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_life_cycle_dialog"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/do_start_new_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/do_start_dialog_show"
+        android:text="@string/start_new_activity"/>
 
 </android.support.constraint.ConstraintLayout>
