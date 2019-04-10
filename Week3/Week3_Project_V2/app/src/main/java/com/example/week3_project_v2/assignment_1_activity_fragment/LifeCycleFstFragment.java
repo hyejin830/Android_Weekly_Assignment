@@ -22,17 +22,12 @@ import androidx.fragment.app.Fragment;
 public class LifeCycleFstFragment extends Fragment implements View.OnClickListener {
 
     OnTextChangedListener mListener;
-    OnTextChangedListener callback;
 
     private static final String TAG = "FragmentLifeCycle";
 
     private Button doStartNewActivity;
     private Button doCommunicateWithSecFragmentButton;
 
-
-    public void setOnTextChangedListener(OnTextChangedListener callback) {
-        this.callback = callback;
-    }
 
     @Override
     public void onAttach(Context context) {
@@ -125,7 +120,7 @@ public class LifeCycleFstFragment extends Fragment implements View.OnClickListen
                 startActivity(startNewActivityInFragIntent);
                 break;
             case R.id.do_communicate_with_sec_fragment:
-                mListener.onTextChanged("communicate success");
+                mListener.onTextChanged(getString(R.string.communicate_success));
                 break;
         }
     }

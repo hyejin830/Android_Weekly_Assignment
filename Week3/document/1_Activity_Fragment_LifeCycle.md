@@ -173,7 +173,7 @@ Fragment내에서 Context객체가 필요한 경우, getActivity()를 호출하�
 
 ----------
 
-## 시나리오
+## 액티비티 LOG TEST
 
 ### 액티비티 시작
 
@@ -198,6 +198,100 @@ onRestart() - onStart() - onResume()
 ### 백그라운드에서 종료
 
 onDestroy() 
+
+## 프래그먼트 LOG TEST
+
+### 프래그먼트 시작
+
+onAttach() - onCreate() - onCreateView() - onStart() - onResume()
+
+### 프래그먼트 시작 후 rotate
+
+onPause() - onStop() - onDestroyView() - onDestroy() - onDeteach() - onAttach() - onCreate() - onCreateView() - onAttach() - onCreate() - onCreateView() - onStart() - onStart() - onResume() - onResume()
+
+### 새로운 액티비티로 이동
+onPause() - onStop()
+
+### 새로운 액티비티에서 돌아옴
+
+onStart() - onResume()
+
+### 프래그먼트 종료
+
+onPause() - onStop() - onDestroyView() - onDestroy() - onDetach()
+
+## 액티비티와 프래그먼트 LOG TEST
+
+### 시작
+
+FragmentLifeCycle: onAttach()
+FragmentLifeCycle: onCreate()
+FragmentLifeCycle: onCreateView()
+FragmentLifeCycle: onStart()
+
+ActivityLifeCycle: onStart()
+ActivityLifeCycle: onResume()
+
+FragmentLifeCycle: onResume()
+
+### 새로운 액티비티로 이동
+
+FragmentLifeCycle: onPause()
+
+ActivityLifeCycle: onPause()
+
+FragmentLifeCycle: onStop()
+
+ActivityLifeCycle: onStop()
+
+### 새로운 액티비티에서 back
+
+ActivityLifeCycle: onRestart()
+
+FragmentLifeCycle: onStart()
+
+ActivityLifeCycle: onStart()
+ActivityLifeCycle: onResume()
+
+FragmentLifeCycle: onResume()
+
+### 종료(back)
+
+FragmentLifeCycle: onPause()
+
+ActivityLifeCycle: onPause()
+
+FragmentLifeCycle: onStop()
+
+ActivityLifeCycle: onStop()
+
+FragmentLifeCycle: onDestroyView()
+FragmentLifeCycle: onDestroy()
+FragmentLifeCycle: onDetach()
+
+ActivityLifeCycle: onDestroy()
+
+### background로 이동
+
+FragmentLifeCycle: onPause()
+
+ActivityLifeCycle: onPause()
+
+FragmentLifeCycle: onStop()
+
+ActivityLifeCycle: onStop()
+
+### background 에서 다시 시작
+
+ActivityLifeCycle: onRestart()
+
+FragmentLifeCycle: onStart()
+
+ActivityLifeCycle: onStart()
+ActivityLifeCycle: onResume()
+
+FragmentLifeCycle: onResume()
+
 
 ## app이 죽을 때 시나리오
 https://developer.android.com/guide/components/activities/activity-lifecycle.html#asem

@@ -32,6 +32,7 @@
     <string name="communicate_message">메세지</string>
     <string name="activity_life_cycle_test">액티비티 생명주기 테스트</string>
     <string name="communicate_with_activity">액티비티와 통신하기</string>
+    <string name="communicate_success">communicate success</string>
 
 
 </resources>
