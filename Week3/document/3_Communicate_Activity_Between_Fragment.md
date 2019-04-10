@@ -47,7 +47,19 @@ ExampleFragment fragment = (ExampleFragment) getFragmentManager().findFragmentBy
 - 프래그먼트 간 데이터를 공유
 
 4. EventBus
+
+EventBus is a publish/subscribe event bus for Android and Java.
+
+[이미지](https://t1.daumcdn.net/cfile/tistory/2676284A56AA0EAD2C)
+
+컴포넌트 간 커뮤니케이션을 간편하게 해준다
+ - 이벤트를 주고 받는 컴포넌트 관계를 알아서 맺어준다.
+ - 백그라운드 쓰레드와 액티비티, 프래그먼트에서 잘 동작한다
+ - 복잡하고 에러나기 쉬운 생명주기 이슈를 피할 수 있게 해준다.
+
 https://github.com/greenrobot/EventBus
+
+Square사에서 만든 Otto 이벤트 버스도 있지만 지금은 deprecated
 
 5. RxJava
 
