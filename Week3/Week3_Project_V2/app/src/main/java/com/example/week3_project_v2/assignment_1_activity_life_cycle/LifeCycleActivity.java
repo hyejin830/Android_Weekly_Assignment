@@ -17,9 +17,6 @@ public class LifeCycleActivity extends AppCompatActivity implements View.OnClick
 
     private static final String TAG = "ActivityLifeCycle";
 
-    private Button doStartDialogShowButton;
-    private Button doStartNewActivityButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +28,8 @@ public class LifeCycleActivity extends AppCompatActivity implements View.OnClick
     }
 
     void initView() {
-        doStartDialogShowButton = findViewById(R.id.do_start_dialog_show);
-        doStartNewActivityButton = findViewById(R.id.do_start_new_activity);
+        Button doStartDialogShowButton = findViewById(R.id.do_start_dialog_show);
+        Button doStartNewActivityButton = findViewById(R.id.do_start_new_activity);
 
         doStartDialogShowButton.setOnClickListener(this);
         doStartNewActivityButton.setOnClickListener(this);

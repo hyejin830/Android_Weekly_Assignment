@@ -10,7 +10,9 @@
 
     <com.example.week1_project.CustomView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="20dp" />
 
 
 </LinearLayout>

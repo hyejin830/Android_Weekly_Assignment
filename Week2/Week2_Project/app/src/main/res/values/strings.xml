@@ -4,6 +4,7 @@
     <string name="assignment_subject">2주차 과제</string>
 
     <string name="communicate_app_webpage_sample">앱과 웹페이지 통신 Sample</string>
+    <string name="custom_dialog_password">비밀번호 변경하기 커스텀 다이얼로그</string>
 
     <string name="my_custom_dialog">비밀번호 변경 커스텀 다이얼로그</string>
     <string name="custom_dialog_pw_change_subject_text">\t\t비밀번호를\n변경해주세요</string>

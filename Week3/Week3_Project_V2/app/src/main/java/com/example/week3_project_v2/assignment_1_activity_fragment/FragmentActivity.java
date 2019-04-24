@@ -15,7 +15,6 @@ public class FragmentActivity extends AppCompatActivity implements LifeCycleFstF
 
     private static final String TAG = "ActivityLifeCycle";
 
-    private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
 
     private TextView communicateWithFragmentTextView;
@@ -32,7 +31,7 @@ public class FragmentActivity extends AppCompatActivity implements LifeCycleFstF
 
         communicateWithFragmentTextView = findViewById(R.id.tv_communicate_with_fragment);
 
-        fragmentManager = getSupportFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         // 프래그먼트 추가, 제거 또는 교체
         fragmentTransaction = fragmentManager.beginTransaction();
 

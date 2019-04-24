@@ -21,6 +21,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:text="@string/communicate_with_fst_fragment"
-        android:textSize="30dp"/>
+        android:textSize="30dp" />
 
 </FrameLayout>

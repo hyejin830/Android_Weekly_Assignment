@@ -13,9 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button doStartActivityFrgLifeCycleButton;
-    private Button doStartFragLifeCycleButton;
-    private Button doStartFragmentNavButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +24,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     void initView() {
 
-        doStartActivityFrgLifeCycleButton = findViewById(R.id.btn_do_start_activity_frg_lifecycle);
-        doStartFragLifeCycleButton = findViewById(R.id.btn_do_start_frag_lifecycle);
-        doStartFragmentNavButton = findViewById(R.id.btn_do_start_frag_nav);
+        Button doStartActivityFrgLifeCycleButton = findViewById(R.id.btn_do_start_activity_frg_lifecycle);
+        Button doStartFragLifeCycleButton = findViewById(R.id.btn_do_start_frag_lifecycle);
+        Button doStartFragmentNavButton = findViewById(R.id.btn_do_start_frag_nav);
 
         doStartActivityFrgLifeCycleButton.setOnClickListener(this);
         doStartFragLifeCycleButton.setOnClickListener(this);

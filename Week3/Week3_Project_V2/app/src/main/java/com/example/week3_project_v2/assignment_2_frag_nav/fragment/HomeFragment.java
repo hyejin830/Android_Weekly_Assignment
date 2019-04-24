@@ -25,7 +25,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private int buttonInt;
 
 
-    private Button homeFragmentButton;
     private OnFragmentPushListener onFragmentPushListener;
 
 
@@ -73,7 +72,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        homeFragmentButton = view.findViewById(R.id.btn_home_fragment);
+        Button homeFragmentButton = view.findViewById(R.id.btn_home_fragment);
         homeFragmentButton.setText(buttonInt + "번째 프래그먼트");
         homeFragmentButton.setOnClickListener(this);
 

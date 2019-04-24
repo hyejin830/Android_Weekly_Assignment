@@ -20,17 +20,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import kotlin.jvm.Throws;
 
 public class BottomNavigationActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, FragNavController.RootFragmentListener, HomeFragment.OnFragmentPushListener {
 
 
     private static int HOME_INDEX = 0;
 
-    private int numberOfRootFragments = 4;
-
-    private BottomNavigationView bottomNavigationView;
-    private FragmentManager fragmentManager;
+    protected BottomNavigationView bottomNavigationView;
     private FragNavController fragNavController;
 
     @Override
@@ -52,7 +48,7 @@ public class BottomNavigationActivity extends AppCompatActivity implements Botto
         bottomNavigationView.inflateMenu(R.menu.navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
-        fragmentManager = getSupportFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
 
         // 1)
         fragNavController = new FragNavController(fragmentManager, R.id.main_content_linear_layout); // 1)
@@ -64,8 +60,9 @@ public class BottomNavigationActivity extends AppCompatActivity implements Botto
 
     }
 
-    ArrayList<Fragment> onCreateFragmentNewInstance() { //1)
+    ArrayList<Fragment> onCreateFragmentNewInstance() { //1) 역할 명시적, getRoot on...콜백....private...
 
+        int numberOfRootFragments = 4;
         ArrayList<Fragment> arrayList = new ArrayList<>(numberOfRootFragments);
 
         arrayList.add(HomeFragment.newInstance(0));

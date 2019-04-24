@@ -11,20 +11,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/assignment_subject"
+        android:text="2주차 과제"
         android:textSize="30dp" />
 
     <Button
         android:id="@+id/btn_start_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/communicate_app_webpage_sample" />
+        android:text="ScrollView" />
 
     <Button
         android:id="@+id/btn_start_nested_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/communicate_app_webpage_sample" />
+        android:text="NestedScrollView" />
 
     <Button
         android:id="@+id/btn_start_communicate_app_with_webpage"

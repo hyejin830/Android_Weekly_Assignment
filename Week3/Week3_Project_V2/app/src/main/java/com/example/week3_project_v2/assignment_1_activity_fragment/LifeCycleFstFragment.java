@@ -21,12 +21,9 @@ import androidx.fragment.app.Fragment;
  */
 public class LifeCycleFstFragment extends Fragment implements View.OnClickListener {
 
-    OnTextChangedListener mListener;
+    private OnTextChangedListener mListener;
 
     private static final String TAG = "FragmentLifeCycle";
-
-    private Button doStartNewActivity;
-    private Button doCommunicateWithSecFragmentButton;
 
 
     @Override
@@ -61,8 +58,8 @@ public class LifeCycleFstFragment extends Fragment implements View.OnClickListen
 
         View view = inflater.inflate(R.layout.fragment_life_cycle_fst, container, false);
 
-        doStartNewActivity = view.findViewById(R.id.do_start_new_activity_in_frag);
-        doCommunicateWithSecFragmentButton = view.findViewById(R.id.do_communicate_with_sec_fragment);
+        Button doStartNewActivity = view.findViewById(R.id.do_start_new_activity_in_frag);
+        Button doCommunicateWithSecFragmentButton = view.findViewById(R.id.do_communicate_with_sec_fragment);
 
         doStartNewActivity.setOnClickListener(this);
         doCommunicateWithSecFragmentButton.setOnClickListener(this);
