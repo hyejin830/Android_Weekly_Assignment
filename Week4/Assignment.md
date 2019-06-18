@@ -1,4 +1,4 @@
-## 3주차 과제
+## 4주차 과제
 
 ### [`1. RecyclerView에 대해서 조사하고, RecyclerView의 주요 클래스를 모두 구현한 코드를 작성하시오. `](https://github.com/hyejin830/Android_Weekly_Assignment/blob/master/Week4/document/1_RecyclerView.md)
 
