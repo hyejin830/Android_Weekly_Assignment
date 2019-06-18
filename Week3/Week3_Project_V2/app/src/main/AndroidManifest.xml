@@ -10,16 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".assignment_1_activity_life_cycle.NewActivity" />
-        <activity android:name=".assignment_1_activity_life_cycle.LifeCycleActivity" />
-        <activity android:name=".assignment_1_activity_fragment.FragmentActivity" />
-        <activity android:name=".assignment_2_frag_nav.BottomNavigationActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".assignment_1_additional.ViewModelTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".assignment_1_activity_life_cycle.NewActivity" />
+        <activity android:name=".assignment_1_activity_life_cycle.LifeCycleActivity" />
+        <activity android:name=".assignment_1_activity_fragment.FragmentActivity" />
+        <activity android:name=".assignment_2_frag_nav.BottomNavigationActivity" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

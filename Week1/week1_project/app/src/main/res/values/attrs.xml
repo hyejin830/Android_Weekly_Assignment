@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="CustomView">
+<declare-styleable name="CustomView">
 
-        <attr name="bottom_color" format="color" />
-        <attr name="top_color" format="color" />
+    <attr name="circleColor" format="color" />
+    <attr name="circleRadius" format="integer"/>
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="strokeColor" format="color" />
 
-
-        <attr name="circleColor" format="color" />
-        <attr name="strokeWidth" format="dimension" />
-        <attr name="strokeColor" format="color" />
-
-    </declare-styleable>
+</declare-styleable>
 
 
 </resources>

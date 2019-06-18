@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Week1_Project</string>
+    <string name="text_change_color">색 변경</string>
+    <string name="text_change_size">크기 변경</string>
 </resources>

@@ -13,7 +13,6 @@
     <string name="start_new_activity">새로운 액티비티로 이동</string>
 
 
-
     <string name="and_frg_life_cycle">액티비티와 프래그먼트의 \n생명주기 테스트와 통신</string>
 
 
@@ -33,6 +32,11 @@
     <string name="activity_life_cycle_test">액티비티 생명주기 테스트</string>
     <string name="communicate_with_activity">액티비티와 통신하기</string>
     <string name="communicate_success">communicate success</string>
+    <string name="text_ok_button">ok</string>
+    <string name="text_fragment">FRAGMENT</string>
+    <string name="text_result_from_activity">activity로부터의 결과 :</string>
+    <string name="text_activity">ACTIVITY</string>
+    <string name="text_result_from_fragment">fragment로부터의 결과 :</string>
 
 
 </resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">배달통</string>
+    <string name="execute_custom_notification">커스텀 노티피케이션 실행하기</string>
+    <string name="custom_notification_dev">현재 테스트 환경 DEV</string>
+    <string name="text_recycler_view">리사이클러뷰</string>
+    <string name="text_rest_api">REST API</string>
+
+
+    <string name="channel_description">상태에 따른 알림 변경</string>
+    <string name="channel_name">상태 변경</string>
+
+
+    <string name="text_action_end_noti">action.end.notification</string>
+    <string name="custom_notification_staging">테스트 환경 \'Staging\'</string>
+    <string name="text_channel_name_notice">공지사항</string>
+    <string name="text_add">add</string>
+    <string name="text_remove">remove</string>
+    <string name="text_action_setting_noti">action.setting.notification</string>
+    <string name="text_add_test">추가 test</string>
+</resources>

@@ -7,14 +7,19 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 public class CustomView extends View {
 
-    Paint paint;
-    int circleColor;
-    int strokeWidth;
+    private Paint paint;
+    private int strokeWidth;
+    private int strokeColor;
+    private int circleColor;
 
+    private int circleWidth;
+    private int circleHeight;
+    private int circleRadius;
 
     public CustomView(Context context) {
         super(context);
@@ -31,22 +36,51 @@ public class CustomView extends View {
         init(attrs);
     }
 
+
+    public void setStrokeColor(int strokeColor) {
+        this.strokeColor = strokeColor;
+        invalidate();
+    }
+
+    public void setCircleColor(int circleColor) {
+        this.circleColor = circleColor;
+        invalidate();
+    }
+
+    public void setCircleRadius(int circleRadius) {
+        this.circleRadius = circleRadius;
+        invalidate();
+    }
+
+    public int getStrokeColor() {
+        return strokeColor;
+    }
+
+    public int getCircleColor() {
+        return circleColor;
+    }
+
+    public int getCircleRadius() {
+        return circleRadius;
+    }
+
+
     private void init(@Nullable AttributeSet set) {
 
         paint = new Paint();
 
-        if(set == null){
+        if (set == null) {
             return;
         }
 
         TypedArray typedArray = getContext().obtainStyledAttributes(set, R.styleable.CustomView);
 
+        // 설정된 값 가져오고 없으면 default로
+        circleRadius = typedArray.getInteger(R.styleable.CustomView_circleRadius,300);
+        strokeWidth = typedArray.getDimensionPixelSize(R.styleable.CustomView_strokeWidth, getContext().getResources().getDimensionPixelSize(R.dimen._10dp));
+        strokeColor = typedArray.getColor(R.styleable.CustomView_strokeColor, Color.BLACK);
         circleColor = typedArray.getColor(R.styleable.CustomView_circleColor, Color.RED);
-        strokeWidth = typedArray.getDimensionPixelSize(R.styleable.CustomView_strokeWidth, getContext().getResources().getDimensionPixelSize(R.dimen._5dp));
 
-        paint.setColor(circleColor);
-
-        //paint.setStrokeWidth();
         typedArray.recycle();
     }
 
@@ -82,27 +116,48 @@ public class CustomView extends View {
                 break;
         }
 
-        setMeasuredDimension(width,height);
+
+        circleWidth = width;
+        circleHeight = height;
+
+        Log.d("HJ_TEST", "width = " + circleWidth + " height = " + circleHeight);
+        setMeasuredDimension(width, height);
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+        // 색상 클래스
+        int x = circleWidth / 2;
+        int y = circleHeight / 2;
 
-         // 색상 클래스
+        int radius = circleRadius;
 
-        int x = canvas.getWidth() / 2;
-        int y = canvas.getHeight() / 2;
+        /*// 가로,세로 원 반지름
+        if (circleWidth > circleHeight) {
+            radius = y / 2;
+        } else {
+            radius = x / 2;
+        }*/
 
+        canvas.drawCircle(x, y, radius, getStroke());
 
-        int raidus = x;
-
-        // bottom circle
-        canvas.drawCircle(x, y, raidus, paint);
-
-        /*// top circle
-        paint.setColor(Color.RED);
-        canvas.drawCircle(x, y, raidus - 30, paint);*/
+        paint.setColor(circleColor);
+        canvas.drawCircle(x, y, radius, paint);
     }
+
+    private Paint getStroke() {
+        Paint p = new Paint(Paint.ANTI_ALIAS_FLAG);
+        p.setStrokeWidth(strokeWidth);
+        p.setColor(strokeColor);
+        p.setStyle(Paint.Style.STROKE);
+        return p;
+    }
+
 }
