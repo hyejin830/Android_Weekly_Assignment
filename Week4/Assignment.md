@@ -10,7 +10,7 @@
 
 -------------------------
 
-### [`2. REST API에 대해서 조사하시오.`](https://github.com/hyejin830/Android_Weekly_Assignment/blob/master/Week3/document/2_REST_API.md)
+### [`2. REST API에 대해서 조사하시오.`](https://github.com/hyejin830/Android_Weekly_Assignment/blob/master/Week4/document/2_REST_API.md)
 
 
 #### 참고 자료
@@ -20,7 +20,7 @@
 [3]https://meetup.toast.com/posts/92
 -------------------
 
-### [`3. 다음과 같은 디자인을 갖는 나만의 Custom Notification Class를 작성하시오.`](https://github.com/hyejin830/Android_Weekly_Assignment/blob/master/Week3/document/3_Custom_Notification.md)
+### [`3. 다음과 같은 디자인을 갖는 나만의 Custom Notification Class를 작성하시오.`](https://github.com/hyejin830/Android_Weekly_Assignment/blob/master/Week4/document/3_Custom_Notification.md)
 
 - Activity의 어떠한 상태가 변경되면 해당 알림에도 상태가 변경되게 할 것 
 1) 테스트 환경 'DEV' -> 테스트 환경 'Staging'
